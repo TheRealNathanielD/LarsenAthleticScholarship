@@ -1,66 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PC6G80WEX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PC6G80WEX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8PC6G80WEX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contributors - Larsen Athletic Scholarship</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent; /* Prevents blue highlights on tap */
+      scroll-behavior: smooth; /* Adds smooth scrolling */
+    }
 
-  gtag('config', 'G-8PC6G80WEX');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contributors - Larsen Athletic Scholarship</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        header {
-            background-color: #FDFFEF;
-            padding: 5px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 5;
-            margin: 5;
-        }
-        nav ul li {
-            margin: 0 100px; /* 100px apart */
-        }
-        nav ul li a {
-            padding: 5px 10px;
-            text-decoration: none;
-        }
-	main { 
-	margin: 20px;
-	}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
 
-    </style>
+    /* Navigation Bar Styles */
+    header {
+      background-color: #FDFFEF;
+      padding: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    nav ul li {
+      margin: 0 100px; /* Space between navigation links */
+    }
+
+    nav ul li a {
+      padding: 5px 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Main Content Styling */
+    main {
+      margin: 20px;
+      padding: 20px;
+      font-size: 24px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #FDFFEF;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Media Queries for Responsive Design */
+
+    /* For tablets and small screens */
+    @media (max-width: 768px) {
+      nav ul li {
+        margin: 0 20px; /* Reduce margin between navigation links */
+      }
+
+      main {
+        font-size: 20px;
+        padding: 15px;
+      }
+    }
+
+    /* For mobile devices (max-width 480px) */
+    @media (max-width: 480px) {
+      nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap; /* Prevent wrapping */
+      }
+
+      nav ul li {
+        margin: 0 5px; /* Reduce margin to fit links on one line */
+      }
+
+      nav ul li a {
+        font-size: 12px; /* Smaller font for mobile navigation */
+        padding: 3px 5px; /* Smaller padding for links */
+      }
+
+      main {
+        font-size: 18px; /* Smaller text for mobile */
+        padding: 10px;
+      }
+
+      footer {
+        font-size: 16px; /* Smaller footer text on mobile */
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contributors.html">Contributors</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="apply.html" target="_blank">Apply</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contributors.html">Contributors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="apply.html" target="_blank">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <h2>Contributors</h2>
-        <p>Details about contributors to the Larsen Athletic Scholarship.</p>
-    </main>
+  <!-- Main Content -->
+  <main>
+    <h2>Contributors</h2>
+    <p>Details about contributors to the Larsen Athletic Scholarship.</p>
+  </main>
 
-    <footer>
-        <p>© 2024 My Website</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 My Website</p>
+  </footer>
 </body>
 </html>
