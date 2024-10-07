@@ -54,6 +54,7 @@
       font-size: 4vw; /* Base title font size on viewport width */
       background-color: rgba(220, 247, 224, 0.88);
       padding: 10px;
+      white-space: nowrap; /* Prevent title from wrapping */
     }
 
     /* Responsive image */
@@ -72,7 +73,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap; /* Allow wrapping for small screens */
+      flex-wrap: wrap;
       padding: 5px;
       margin: 5px;
     }
@@ -122,23 +123,23 @@
     /* For mobile devices (max-width 480px) */
     @media (max-width: 480px) {
       .title {
-        font-size: 1.8em; /* Make the title smaller for mobile */
+        font-size: 1.2em; /* Smaller title to fit on one line */
         top: 70%; /* Adjust position slightly for smaller screens */
+        white-space: nowrap; /* Ensure title stays on one line */
       }
 
-      /* Navigation bar changes to keep links on one line */
+      /* Navigation bar changes to make links closer together */
       nav ul {
         flex-wrap: nowrap; /* Prevent wrapping */
-        overflow-x: auto; /* Allow scrolling if links overflow */
       }
 
       nav ul li {
-        margin: 0 10px; /* Reduced margin to fit links on one line */
+        margin: 0 5px; /* Reduce margin to fit links on one line */
       }
 
       nav ul li a {
-        font-size: 14px; /* Smaller font for mobile navigation */
-        padding: 5px 5px; /* Adjust padding to make links fit better */
+        font-size: 12px; /* Smaller font for mobile navigation */
+        padding: 3px 5px; /* Smaller padding for links */
       }
 
       main {
