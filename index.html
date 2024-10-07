@@ -72,8 +72,9 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      padding: 5;
-      margin: 5;
+      flex-wrap: wrap; /* Allow wrapping for small screens */
+      padding: 5px;
+      margin: 5px;
     }
 
     nav ul li {
@@ -105,16 +106,11 @@
     /* For tablets and small screens */
     @media (max-width: 768px) {
       .title {
-        font-size: 4vw; /* Base font-size scales with viewport width */
+        font-size: 3.5vw; /* Slightly smaller font for tablets */
       }
 
       nav ul li {
         margin: 0 20px;
-      }
-
-      nav ul {
-        flex-direction: column;
-        align-items: center;
       }
 
       main {
@@ -126,20 +122,23 @@
     /* For mobile devices (max-width 480px) */
     @media (max-width: 480px) {
       .title {
-        font-size: 2.5em; /* Make the title proportional to image size using em */
+        font-size: 1.8em; /* Make the title smaller for mobile */
         top: 70%; /* Adjust position slightly for smaller screens */
       }
 
+      /* Navigation bar changes to keep links on one line */
       nav ul {
-        flex-direction: column;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Allow scrolling if links overflow */
       }
 
       nav ul li {
-        margin: 10px 0;
+        margin: 0 10px; /* Reduced margin to fit links on one line */
       }
 
       nav ul li a {
-        font-size: 16px; /* Smaller font for mobile navigation */
+        font-size: 14px; /* Smaller font for mobile navigation */
+        padding: 5px 5px; /* Adjust padding to make links fit better */
       }
 
       main {
