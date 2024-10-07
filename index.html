@@ -1,127 +1,110 @@
-/* Global Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PC6G80WEX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-/* Make sure the website content scales properly across devices */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
+  gtag('config', 'G-8PC6G80WEX');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larsen Athletic Scholarship</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Adding styles for the title overlay */
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
 
-/* Adding styles for the title overlay */
-.image-container {
-  position: relative;
-  text-align: center;
-  max-width: 100%; /* Make image container responsive */
-}
+        .title {
+            position: absolute;
+            top: 75%; /* Position the title over the image */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black; /* Change the color as needed */
+            font-size: 68px; /* Adjust the font size */
+            background-color: rgba(220, 247, 224, 0.88); /* Optional: adds a translucent background */
+            padding: 10px; /* Optional: adds padding around the text */
+        }
 
-.title {
-  position: absolute;
-  top: 75%; /* Position the title over the image */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-size: 68px; /* Default size for desktop */
-  background-color: rgba(220, 247, 224, 0.88);
-  padding: 10px;
-}
+        /* Styles for the navigation bar */
+        header {
+            background-color: #FDFFEF;
+            padding: 5px;  /* Reduce padding in header */
+        }
 
-/* Responsive image */
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;  /* Center the navigation links */
+            padding: 5;
+            margin: 5;
+        }
 
-/* Styles for the navigation bar */
-header {
-  background-color: #FDFFEF;
-  padding: 10px;
-}
+        nav ul li {
+            margin: 0 100px;  /* Reduced margin between navigation links */
+        }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
+        nav ul li a {
+            padding: 5px 10px;  /* Padding inside each link */
+            text-decoration: none;
+        }
 
-nav ul li {
-  margin: 0 50px; /* Adjusted margin between links */
-}
+        /* Main content styles */
+        main {
+            padding: 20px; /* Add padding to main content */
+            margin-bottom: 100px; /* Ensure there's space for footer */
+	    font-size: 24px;
+	    margin: 20px;
+        }
 
-nav ul li a {
-  padding: 10px 15px;
-  text-decoration: none;
-  font-size: 18px;
-}
+        footer {
+            background-color: #FDFFEF; /* Same background color as header */
+            padding: 10px; /* Add padding */
+	    margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contributors.html">Contributors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="apply.html" target="_blank">Apply</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Main content styles */
-main {
-  padding: 20px;
-  font-size: 24px;
-  line-height: 1.6;
-  margin-bottom: 100px;
-}
+    <!-- Image Section with Title -->
+    <section class="image-container">
+        <!-- Assuming the image is in the root directory -->
+        <img src="63_04113.JPG" alt="Descriptive Image" style="max-width: 90%; height: auto;" />
+        <div class="title">Larsen Athletic Scholarship</div>
+    </section>
 
-/* Footer */
-footer {
-  background-color: #FDFFEF;
-  padding: 10px;
-  text-align: center;
-}
+    <!-- Main Content -->
+    <main>
+        <h2>What is the Larsen Athletic Scholarship?</h2>
+        <p>The Larsen Athletic Scholarship is set up to assist individuals wanting to compete in athletics
+	   who are experiencing financial difficulties in meeting the costs associated with training and
+	   competition. The scholarship is intended to provide people with the opportunity to participate
+	   in athletics at any level and to support them to have the opportunities that participation in
+	   sport provides.</p>
+    </main>
 
-/* Media Queries for Responsive Design */
-
-/* For tablets and small screens */
-@media (max-width: 768px) {
-  .title {
-    font-size: 48px; /* Smaller title on tablet */
-  }
-
-  nav ul li {
-    margin: 0 20px; /* Reduce margin for navigation items */
-  }
-
-  nav ul {
-    flex-direction: column; /* Stack navigation links vertically */
-    align-items: center;
-  }
-
-  main {
-    font-size: 20px; /* Smaller text for tablet screens */
-    padding: 15px;
-  }
-}
-
-/* For mobile devices (max-width 480px) */
-@media (max-width: 480px) {
-  .title {
-    font-size: 32px; /* Even smaller title on mobile */
-    padding: 5px; /* Less padding on small screens */
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 10px 0; /* Stack navigation items vertically with some space */
-  }
-
-  nav ul li a {
-    font-size: 16px; /* Smaller font for mobile navigation */
-  }
-
-  main {
-    font-size: 18px; /* Smaller text on mobile */
-    padding: 10px;
-  }
-
-  footer {
-    font-size: 16px; /* Smaller footer text on mobile */
-  }
-}
+    <!-- Footer -->
+    <footer>
+        <p>larsenathleticscholarship@gmail.com</p>
+    </footer>
+</body>
+</html>
