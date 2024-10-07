@@ -51,7 +51,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: black;
-      font-size: 6vw; /* Scales title based on viewport width */
+      font-size: 4vw; /* Base title font size on viewport width */
       background-color: rgba(220, 247, 224, 0.88);
       padding: 10px;
     }
@@ -105,7 +105,7 @@
     /* For tablets and small screens */
     @media (max-width: 768px) {
       .title {
-        font-size: 8vw; /* Adjusts title size for tablets */
+        font-size: 4vw; /* Base font-size scales with viewport width */
       }
 
       nav ul li {
@@ -126,8 +126,8 @@
     /* For mobile devices (max-width 480px) */
     @media (max-width: 480px) {
       .title {
-        font-size: 10vw; /* Adjusts title size for mobile devices */
-        padding: 5px;
+        font-size: 2.5em; /* Make the title proportional to image size using em */
+        top: 70%; /* Adjust position slightly for smaller screens */
       }
 
       nav ul {
